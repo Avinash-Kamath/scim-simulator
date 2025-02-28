@@ -5,7 +5,7 @@ A command-line tool for simulating and managing a SCIM (System for Cross-domain 
 ## Installation
 
 ```bash
-brew tap Avinash-Kamath/scim-simulator
+brew tap Avinash-Kamath/brews
 brew install scim-sim
 ```
 
