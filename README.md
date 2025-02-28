@@ -14,7 +14,7 @@ brew install scim-sim
 Before using the tool, you need to set up your SCIM configuration:
 
 ```bash
-scim-sim config
+scim-sim setup
 ```
 
 This will prompt you for:
