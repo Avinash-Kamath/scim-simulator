@@ -1,1 +1,5 @@
-__version__ = "0.1.0" 
+"""
+SCIM Directory Simulator and Management Tool
+"""
+
+__version__ = "0.0.1" 
