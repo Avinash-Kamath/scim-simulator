@@ -1,6 +1,6 @@
 # SCIM Directory Simulator CLI
 
-A command-line tool for simulating and managing a SCIM (System for Cross-domain Identity Management) directory. This tool allows you to create and manage users and groups, simulating a real SCIM-compliant identity provider.
+A command-line tool for simulating and managing a [SCIM](https://scim.cloud) (System for Cross-domain Identity Management) directory. This tool allows you to create and manage users and groups, simulating a real SCIM-compliant identity provider.
 
 ## Installation
 
