@@ -18,11 +18,10 @@ uv tool update-shell
 
 Then restart your terminal. This is a one-time step that adds `~/.local/bin` to your PATH so all uv-installed tools are available globally.
 
-Alternatively, via Homebrew:
+Alternatively, with pip (uv recommended):
 
 ```bash
-brew tap Avinash-Kamath/brews
-brew install scim-sim
+pip install scim-sim
 ```
 
 ## Configuration
@@ -45,6 +44,8 @@ scim-sim config
 
 ## Commands
 
+All commands follow the pattern `scim-sim <command> [args]`. Run `scim-sim --help` or `scim-sim <command> --help` for details.
+
 ### User Management
 
 ```bash
@@ -61,7 +62,7 @@ scim-sim remove-user <user-id>
 # Create a new group
 scim-sim create-group "Engineering Team"
 
-# Delete a group and its members
+# Delete a group and permanently delete all its members
 scim-sim delete-group <group-id>
 
 # Add user to group
@@ -70,6 +71,8 @@ scim-sim add-to-group <user-id> <group-id>
 # Remove user from group
 scim-sim remove-from-group <user-id> <group-id>
 ```
+
+> **Warning:** `delete-group` permanently deletes all users that belong to the group, not just the group itself.
 
 ### Directory Visualization
 
@@ -84,13 +87,13 @@ Example output:
 ```
 📂 Directory
 ├── 👥 Groups
-│   ├── Engineering Team │ ID: dirgrp_1234567890123456
-│   │    ├── 👤 avinash.kamath@example.com │ ID: dirusr_8913202356420102
-│   │    └── 👤 srini.k@example.com │ ID: dirusr_4123456789012345
+│   ├── Engineering Team │ ID: dirgroup_1234567890123456
+│   │    ├── 👤 avinash.kamath@example.com │ ID: diruser_8913202356420102
+│   │    └── 👤 srini.k@example.com        │ ID: diruser_4123456789012345
 │   │
-│   └── Product Team │ ID: dirgrp_6789012345678901
+│   └── Product Team │ ID: dirgroup_6789012345678901
 └── 👤 Ungrouped Users
-    └── ravi@example.com │ ID: dirusr_6789012345678901
+    └── ravi@example.com │ ID: diruser_6789012345678901
 ```
 
 ## Available Commands
