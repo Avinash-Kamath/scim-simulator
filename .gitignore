@@ -1,2 +1,20 @@
-# Created by venv; see https://docs.python.org/3/library/venv.html
-*
+# Virtual environment
+.venv/
+
+# Build artifacts
+dist/
+*.egg-info/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# uv
+.uv/
+
+# pytest
+.pytest_cache/
+
+# Local SCIM config (contains credentials)
+~/.scim_config.json

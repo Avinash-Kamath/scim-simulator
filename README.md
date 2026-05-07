@@ -4,6 +4,22 @@ A command-line tool for simulating and managing a [SCIM](https://scim.cloud) (Sy
 
 ## Installation
 
+Requires [uv](https://docs.astral.sh/uv/getting-started/installation/).
+
+```bash
+uv tool install scim-sim
+```
+
+**First-time setup:** If `scim-sim` is not found after installing, run:
+
+```bash
+uv tool update-shell
+```
+
+Then restart your terminal. This is a one-time step that adds `~/.local/bin` to your PATH so all uv-installed tools are available globally.
+
+Alternatively, via Homebrew:
+
 ```bash
 brew tap Avinash-Kamath/brews
 brew install scim-sim
