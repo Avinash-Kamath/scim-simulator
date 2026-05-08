@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  A CLI for creating and managing users and groups against any <a href="https://scim.cloud">SCIM</a>-compliant identity provider.
+  A CLI for creating and managing users and groups against any <a href="https://scim.cloud">SCIM</a>-compliant Client. Can be Used to Simulate An IDP Like OKTA, Microsoft, OneIdentity, Jumpcloud etc
 </p>
 
 ---
